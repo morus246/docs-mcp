@@ -3,5 +3,5 @@ publish = "public"
 
 [[redirects]]
 from = "/mcp"
-to = "/"
-status = 302
+to = "https://docs.astro.build/en/guides/build-with-ai/"
+status = 303
