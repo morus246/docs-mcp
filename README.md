@@ -49,7 +49,7 @@ claude mcp add --transport http "Astro docs" https://mcp.docs.astro.build/mcp
 
 ### VS Code
 
-GitHub doesn't support VS Code deep links, so open the link below in your browser to install the MCP server in Cursor:
+GitHub doesn't support VS Code deep links, so open the link below in your browser to install the MCP server in VS Code:
 
 ```
 vscode:mcp/install?%7B%22name%22%3A%22Astro%20docs%22%2C%22url%22%3A%22https%3A%2F%2Fmcp.docs.astro.build%2Fmcp%22%7D
