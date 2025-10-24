@@ -1,7 +1,2 @@
 [build]
 publish = "public"
-
-[[redirects]]
-from = "/mcp"
-to = "/"
-status = 303
