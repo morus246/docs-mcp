@@ -96,6 +96,15 @@ function formatResponse(data: unknown): {
 
 // Netlify Edge Function Handler
 export default async function handler(req: Request) {
+  if (req.method === "GET") {
+    return new Response("Method Not Allowed", {
+      status: 405,
+      headers: {
+        "Content-Type": "text/plain",
+        Allow: "POST",
+      },
+    });
+  }
   try {
     const { req: nodeReq, res: nodeRes } = toReqRes(req);
     const server = getServer();
@@ -128,6 +137,6 @@ export default async function handler(req: Request) {
 }
 
 export const config: Config = {
-  path: ["/mcp", "/"],
-  method: ["POST"],
+  path: ["/mcp"],
+  method: ["POST", "GET"],
 };
