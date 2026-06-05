@@ -270,10 +270,11 @@ export default async function handler(req: Request): Promise<Response> {
     // Convert Node.js ServerResponse back to Web API Response
     return toFetchResponse(nodeRes);
   } catch (error) {
-    const errorMessage = error instanceof Error ? error.message : String(error);
-    console.error("Erro no servidor MCP:", errorMessage);
-    return Response.json(formatErrorResponse(errorMessage), {
+    const stack = error instanceof Error ? `${error.name}: ${error.message}\n${error.stack}` : String(error);
+    console.error("Erro no servidor MCP:", stack);
+    return new Response(stack, {
       status: 500,
+      headers: { "Content-Type": "text/plain" },
     });
   }
 }
