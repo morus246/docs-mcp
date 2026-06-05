@@ -13,7 +13,7 @@ MCP (Model Context Protocol) é o padrão aberto que permite que modelos de ling
 O servidor dp-createur PT-BR é remoto e não exige instalação local. Use as configurações abaixo no seu cliente MCP preferido:
 
 - **Name:** `DP Criador PT-BR`
-- **URL:** `https://docs-mcp.netlify.app/mcp`
+- **URL:** `https://regal-profiterole-aabd5a.netlify.app/mcp`
 - **Transport:** `http`
 
 ### Claude Code
@@ -21,7 +21,7 @@ O servidor dp-createur PT-BR é remoto e não exige instalação local. Use as c
 Execute o comando no terminal:
 
 ```sh
-claude mcp add --transport http dp-createur-ptbr https://docs-mcp.netlify.app/mcp
+claude mcp add --transport http dp-createur-ptbr https://regal-profiterole-aabd5a.netlify.app/mcp
 ```
 
 ### Cursor
@@ -32,7 +32,7 @@ Adicione ao seu arquivo de configuração MCP do Cursor (`~/.cursor/mcp.json` ou
 {
   "mcpServers": {
     "dp-createur-ptbr": {
-      "url": "https://docs-mcp.netlify.app/mcp"
+      "url": "https://regal-profiterole-aabd5a.netlify.app/mcp"
     }
   }
 }
@@ -48,7 +48,7 @@ Adicione ao arquivo de configurações do VS Code (`.vscode/mcp.json` ou nas Use
     "servers": {
       "dp-createur-ptbr": {
         "type": "http",
-        "url": "https://docs-mcp.netlify.app/mcp"
+        "url": "https://regal-profiterole-aabd5a.netlify.app/mcp"
       }
     }
   }
@@ -60,7 +60,7 @@ Adicione ao arquivo de configurações do VS Code (`.vscode/mcp.json` ou nas Use
 O Windsurf requer um proxy local para servidores HTTP remotos. Use a configuração abaixo:
 
 ```sh
-npx mcp-remote https://docs-mcp.netlify.app/mcp
+npx mcp-remote https://regal-profiterole-aabd5a.netlify.app/mcp
 ```
 
 Ou via arquivo de configuração (`~/.codeium/windsurf/mcp_config.json`):
@@ -70,7 +70,7 @@ Ou via arquivo de configuração (`~/.codeium/windsurf/mcp_config.json`):
   "mcpServers": {
     "dp-createur-ptbr": {
       "command": "npx",
-      "args": ["-y", "mcp-remote", "https://docs-mcp.netlify.app/mcp"]
+      "args": ["-y", "mcp-remote", "https://regal-profiterole-aabd5a.netlify.app/mcp"]
     }
   }
 }
@@ -175,6 +175,12 @@ Use a ferramenta buscar_skills_por_categoria com categoria="Venda e Monetizaçã
 ## Variáveis de Ambiente
 
 **Nenhuma variável de ambiente é necessária.** O servidor dp-createur PT-BR funciona sem nenhuma configuração adicional após a conexão.
+
+---
+
+## Origem
+
+Os skills deste servidor são uma tradução para PT-BR do projeto original em francês **dp-createur** por [kabde](https://github.com/kabde/dp-createur). Adaptações incluem moeda (R$), plataformas (Hotmart, Kiwify, Brevo) e contexto de mercado brasileiro.
 
 ---
 
