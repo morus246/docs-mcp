@@ -3,7 +3,7 @@ import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/
 import { toFetchResponse, toReqRes } from "fetch-to-node";
 import z from "zod";
 import type { Config } from "@netlify/edge-functions";
-import { skillsMap, skillsList, workflowGraph, objectiveIndex } from "./skills/index.ts";
+import { skillsMap, skillsList, workflowGraph, objectiveIndex } from "../skills/index.ts";
 
 const CATEGORIAS_VALIDAS = [
   "Fundação",
