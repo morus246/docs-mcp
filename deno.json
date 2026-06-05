@@ -3,6 +3,7 @@
     "fetch-to-node": "npm:fetch-to-node@2",
     "astro": "npm:astro",
     "@modelcontextprotocol/sdk": "npm:@modelcontextprotocol/sdk@1.15.1",
-    "@netlify/edge-functions": "npm:@netlify/edge-functions"
+    "@netlify/edge-functions": "npm:@netlify/edge-functions",
+    "fast-check": "npm:fast-check"
   }
 }
